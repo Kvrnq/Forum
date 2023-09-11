@@ -121,9 +121,9 @@ to {
   left: -97px;
   width: 100%;
   min-height: 70vh;
-  /* background: linear-gradient(0deg,   rgba(88, 153, 232, 0.05)0%,   rgba(88, 153, 232, 0.4)55%,   rgba(88, 153, 232, 0.5)100%),url(../assets/cover.png) top center; */
+  /* background: linear-gradient(0deg,   rgba(88, 153, 232, 0.05)0%,   rgba(88, 153, 232, 0.4)55%,   rgba(88, 153, 232, 0.5)100%),url(./assets/cover.png) top center; */
 
-  background: linear-gradient(0deg,   rgba(27, 47, 69, 0.5)0%,   rgba(27, 47, 69, 0.6)15%,   rgba(27, 47, 69, 0.85)100%),url(../assets/cover.png) top center;
+  background: linear-gradient(0deg,   rgba(27, 47, 69, 0.5)0%,   rgba(27, 47, 69, 0.6)15%,   rgba(27, 47, 69, 0.85)100%),url(./assets/cover.png) top center;
   background-size: cover;
   padding: 120px;
   
@@ -256,7 +256,7 @@ to {
 
 
 .Ruban{
-  background-image: url(../assets/Rubanbleu.png) ;
+  background-image: url(./assets/Rubanbleu.png) ;
   position:absolute;
   opacity: 0.9;
   top:-10px;
