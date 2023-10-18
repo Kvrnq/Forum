@@ -282,6 +282,47 @@
   
   
   </script>
+  <div class="Writefp">
+          <form onsubmit="SendMail(event)">
+            <label for="fname" class="Write" style="font-family: 'Roboto',sans-serif;padding-top:20px">VOTRE ENTREPRISE</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nom de l'entreprise.." class="Writef">
+        
+            <label for="lname" style="font-family: 'Roboto',sans-serif">VOTRE ADRESSE ELECTRONIQUE</label>
+            <input type="text" id="lname" name="lastname" placeholder="Adresse électronique.." class="Writef">
+        
+        
+            <label for="subject" style="font-family: 'Roboto',sans-serif">VOTRE DEMANDE</label>
+            <textarea id="subject" class="Writef" name="subject" placeholder="Qu'est ce que vous recherchiez ?" style="height:200px"></textarea>
+        
+            <input type="submit" value="Envoyer" class="Sb" >
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>function SendMail(e){
+      e.preventDefault();
+      Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "nuckite@gmail.com",
+    Password : "6EC23D3414C884F5C6D6900556A5DFFB5F4E",
+    To : "nuckite@gmail.com",
+    From : "nuckite@gmail.com",
+    Subject : "Demande ECC-Entreprises",
+    Body : "Test"
+
+}
+);
+var a = document.getElementById("fname");
+var b = document.getElementById("lname");
+var c = document.getElementById("subject");
+a.value=""
+b.value=""
+c.value=""
+return alert("Email sent successfully")
+
+    }</script> 
+    </div>
   
   
 
